@@ -1,0 +1,12 @@
+const url = require('url');
+const webAddress = 'https://www.linkedin.com/in/abhilashpolavarapu/';
+const parsedUrl = url.parse(webAddress, true);
+console.log("=== Parsed URL Components ===");
+console.log("Full URL       :", parsedUrl.href);
+console.log("Protocol       :", parsedUrl.protocol);
+console.log("Host           :", parsedUrl.host);
+console.log("Hostname       :", parsedUrl.hostname);
+console.log("Port           :", parsedUrl.port);
+console.log("Pathname       :", parsedUrl.pathname);
+console.log("Search Query   :", parsedUrl.search);
+console.log("Fragment/Hash  :", parsedUrl.hash);
